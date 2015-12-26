@@ -1,4 +1,4 @@
-.flink, .hlink
+.flink, .hlink, .downloadLink
 {
     color: white;
     font-family: Avalon;
@@ -11,7 +11,7 @@
     padding-right: 15px;
 }
 
-.flink:hover, .hlink:hover
+.flink:hover, .hlink:hover, .downloadLink:hover
 {
     color: #bbbbbb;
 }
@@ -74,6 +74,16 @@
     font-size: 16px;
     padding-left: calc((100% - 750px)/2 + 15px);
     padding-right: calc((100% - 750px)/2 + 200px);
+}
+
+#mainText3
+{ 
+    float: left;
+    color: white;
+    font-family: Avalon;
+    font-size: 16px;
+    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-right: calc((100% - 750px)/2 );
 }
 
 #geisel

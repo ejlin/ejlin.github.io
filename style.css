@@ -136,19 +136,9 @@
 
 #copyright
 {
+    float: left;
     padding-left: calc((100% - 750px)/2);
-    padding-top: 3%;
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 15px;
-}
-
-#copyrightT
-{
-    padding-left: calc((100% - 750px)/2 + 20px);
-    font-family: Avalon;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
 }
 
 #logos
