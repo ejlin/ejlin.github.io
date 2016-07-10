@@ -119,6 +119,10 @@ html {
     display: inline-block;
 }
 
+.parentImages
+{
+    display: inline-block;
+}
 
 #mainText
 { 
@@ -200,12 +204,14 @@ html {
 }
 
 
-.scaleImage {
+.scaleImage
+{
     width: 100%;
     height: 100%;    
 }
 
-.scaleImage img {
+.scaleImage img 
+{
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* IE 9 */
@@ -213,12 +219,63 @@ html {
     transition: all 1s ease;
 }
 
-.scaleImage:hover img {
+.scaleImage:hover img 
+{
     -webkit-transform:scale(1.10); /* Safari and Chrome */
     -moz-transform:scale(1.10); /* Firefox */
     -ms-transform:scale(1.10); /* IE 9 */
     -o-transform:scale(1.10); /* Opera */
      transform:scale(1.10);
 }
+
+.projectImages
+{
+  float: left;
+  position: absolute;
+  padding-top: 12%;
+  padding-left: calc((100% - 750px)/2 - 60px);
+
+}
+.projectImages2
+{
+   float: left;
+   padding-top: 12.15%;
+   padding-left: 2%;
+   
+}
+
+.projectImages3
+{
+   float: left;
+   padding-top: 8.70%;
+   padding-left: 2%;
+   
+}
+
+
+.scaleProjectImages
+{
+    width: 100%;
+    height: 100%;    
+}
+
+.scaleProjectImages img 
+{
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.scaleProjectImages:hover img 
+{
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+}
+
 
 
