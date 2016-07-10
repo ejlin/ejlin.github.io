@@ -9,46 +9,38 @@
     </title>
     
     <link rel="icon" type="img/ico" href="Images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="rstyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body bgcolor="#6b6b6b">
          
-    <div style = "padding-left: calc((100% - 750px)/2)">
+    <div class=topLinks style = "padding-left: calc((100% - 750px)/2)">
     
-      <a href="index.html" class="flink">
-        <div style = "float:left;" id = "linkRectangle1">
+      <a href="index.html" style="text-decoration:none" class="tlink">
     	  Home
-        </div>
       </a>
     
-      <div style = "float:left;" id = "linkRectangle">
         <a href="About.html" style="text-decoration:none" class="hlink">
 	  About
         </a>
-      </div>
       
-      <div style = "float:left;" id = "linkRectangle3">
         <a href="Projects.html" style="text-decoration:none" class="hlink">
 	  Projects
         </a>
-      </div>
 
-      <div style = "float:left;" id = "linkRectangle2">
-        <a href="Resume.html" style="text-decoration:none" class="hlink">
+        <a href="Resume.html" style="text-decoration:none" class="slink">
 	  Resume
         </a>
-      </div>
           
-      <div style = "float:left;" id = "linkRectangle4">
         <a href="Contact.html" style="text-decoration:none" class="hlink">
    	  Contact
         </a>
-      </div>
     </div>
     
     <div id = "geisel">
+      <a href="index.html">    
         <img src="Images/Geisel.gif" height = "45px" width = "75px"/>
+        </a>
       </div>
 
     <p class = "openText">
@@ -59,7 +51,7 @@
       . . .
     </p>
 <div id = "parent">
-    <div id = "mainText">
+    <div id = "mainTextA">
       Name: Eric Lin<br>
       Major: B.S. Computer Science<br>
       University of California, San Diego | June 2018<br>
@@ -79,7 +71,7 @@
       <br><br><li>Java | C | Python | HTML/CSS | Lua | SQL | VIM | Powerpoint/Excel
       <br><br><br>
       </div>
-      <div id = "mainText2">
+      <div id = "mainTextB">
       Work Experience:
       <br><br>
       1. O'Interface | Intern:<br>
@@ -113,7 +105,7 @@
       
       </div>
 
-      <div id = "mainText3">
+      <div id = "mainTextC">
         <hr></hr><br>
         <a href="Documents/Resume.docx" download class = "downloadLink" style="text-decoration:none">EricLinResume.Docx</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -122,7 +114,8 @@
       </div>
 
   </div>
-    <div id = "logos">
+    <div class = "logos">
+      <div class="scaleImage">
       <a href="http://www.facebook.com/tgih1999" style="text-decoration:none" class="ilink1">
         <img src="Images/Facebook-icon.jpg" alt="Connect with me on Facebook!" 
           title="Connect with me on Facebook!" class= "links"/>
@@ -138,20 +131,19 @@
         title="Find me on GitHub!" class = "links"/>
       </a>
     </div>
+    </div>
 
-    <p>
-      <div id = "info">
-      ejlin@ucsd.edu | (858) 354-8792
+      <div class = "info">
+        ejlin@ucsd.edu | (858) 354-8792
       </div>
-    </p>
-
     
   </body>
  
-  <div id="copyright">
-    <img src="Images/Copyright.png" alt="This website is copyrighted!" 
-      title="This website is copyrighted!" height="30px" width="200px"/>
+  <footer>
+  <div class="copyright">
+    <p>Copyright &copy; 2015 Eric Lin</p>
   </div>
+  </footer> 
 
 </html>
 
