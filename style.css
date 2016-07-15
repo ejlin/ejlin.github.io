@@ -10,6 +10,15 @@ html {
     transition: color .5s;
 }
 
+.backButton
+{
+    color:white;
+    font-family: Avalon;
+    font-size: 24px;
+    transition: color .5s;
+}
+
+
 .hlink, .slink{
     color: white;
     padding-left: 30px;
@@ -19,7 +28,7 @@ html {
 {
     color: #bfbfbf;
 }
-.flink:hover, .hlink:hover, .tlink:hover, .downloadLink:hover
+.flink:hover, .hlink:hover, .tlink:hover, .downloadLink:hover, .backButton:hover
 {
     color: #bbbbbb;
 }
@@ -74,6 +83,16 @@ html {
     padding-left: calc((100% - 750px)/2 + 15px);
 }
 
+.projectTitle
+{   
+    float: left;
+    color: white;
+    font-family: Avalon;
+    font-size: 32px;
+    padding-left: calc((100% - 750px)/2 + 15px);
+}
+
+
 .openTextE
 {  
     float: left;
@@ -81,6 +100,17 @@ html {
     font-size: 36px;
     padding-top: 2.7%;  
     padding-left: 10px;
+}
+
+.padding
+{
+    padding-left: calc((100% - 750px)/2 - 15px);
+}
+
+.padding2
+{
+    padding-top: 3%;
+    padding-left: calc((100% - 750px)/2 - 15px);
 }
 
 #mainTextA
@@ -113,6 +143,14 @@ html {
     padding-right: calc((100% - 750px)/2 );
 }
 
+#sedsText
+{
+    color: white;
+    font-family: Avalon;
+    font-size: 16px;
+    width: 750px;
+    padding-left: calc((100% - 750px)/2 + 15px);
+}
 
 #parent
 {
@@ -178,7 +216,6 @@ html {
     padding-right: calc((100% - 750px)/2 + 25px);
 }
 
-
 .copyright
 {
     text-align:center;
@@ -187,6 +224,7 @@ html {
     color: #FFFFFF; 
     padding: 25px 0;   
 }
+
 .logos
 {
     clear:left;
@@ -202,7 +240,6 @@ html {
     font-size: 14px;
     color: white;
 }
-
 
 .scaleImage
 {
@@ -230,28 +267,24 @@ html {
 
 .projectImages
 {
-  float: left;
-  position: absolute;
-  padding-top: 12%;
-  padding-left: calc((100% - 750px)/2 - 60px);
-
+    float: left;
+    position: absolute;
+    padding-top: 10%;
+    padding-left: calc((100% - 750px)/2 - 15px);
 }
 .projectImages2
 {
    float: left;
-   padding-top: 12.15%;
-   padding-left: 2%;
-   
+   padding-top: 10%;
+   padding-left: calc((100% - 750px)/2 + 170px);
 }
 
 .projectImages3
 {
    float: left;
-   padding-top: 8.70%;
-   padding-left: 2%;
-   
+   padding-top: 10%;
+   padding-left: calc((100% - 750px)/2 + 400px);
 }
-
 
 .scaleProjectImages
 {
@@ -277,5 +310,24 @@ html {
      transform:scale(1.05);
 }
 
+.breakLine
+{
+  padding-top: 10%;
+  width: 750px;
+  padding-left: calc((100% - 750px)/2);
+}
+
+.breakLine2
+{
+  padding-top: 5%;
+  width: 750px;
+  padding-left: calc((100% - 750px)/2);
+}
 
 
+.backButton
+{
+    color: white;
+    font-family: Avalon;
+    font-size: 24px;  
+}
