@@ -168,7 +168,7 @@ html {
     color: white;
     font-family: Avalon;
     font-size: 16px;
-    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-left: calc((100% - 750px)/2 + 215px);
     padding-right: calc((100% - 750px)/2 + 507px);
 }
 
@@ -179,7 +179,7 @@ html {
     color: white;
     font-family: Avalon;
     font-size: 16px;
-    padding-left: calc((100% - 750px)/2 + 256px);
+    padding-left: calc((100% - 750px)/2 + 232px);
     padding-right: calc((100% - 750px)/2 + 266px);
 }
 
