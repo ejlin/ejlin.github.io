@@ -329,3 +329,8 @@ html {
     font-family: Sans-serif;
     font-size: 24px;  
 }
+
+footer{
+  padding: 60px 4%;
+  background-color: #f5f5f9;
+}
