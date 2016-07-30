@@ -5,7 +5,7 @@ html {
 .flink, .hlink, .slink, .tlink, .downloadLink
 {
     color:white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 20px;
     transition: color .5s;
 }
@@ -13,7 +13,7 @@ html {
 .backButton
 {
     color:white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 24px;
     transition: color .5s;
 }
@@ -53,7 +53,7 @@ html {
 {
     text-align:center;
     padding-top: 8%;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 64px;
     color: #FFFFFF; 
 }
@@ -61,7 +61,7 @@ html {
 .underText
 {
     text-align:center;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 36px;
     color: #FFFFFF;
 }
@@ -77,19 +77,19 @@ html {
 {   
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 36px;
     padding-top: 3%;
-    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-left: calc((100% - 750px)/2);
 }
 
 .projectTitle
 {   
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 32px;
-    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-left: calc((100% - 750px)/2);
 }
 
 
@@ -117,9 +117,9 @@ html {
 { 
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
-    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-left: calc((100% - 750px)/2);
     padding-right: calc((100% - 750px)/2);
 }
 
@@ -127,9 +127,9 @@ html {
 { 
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
-    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-left: calc((100% - 750px)/2);
     padding-right: calc((100% - 750px)/2 + 200px);
 }
 
@@ -137,25 +137,21 @@ html {
 { 
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
-    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-left: calc((100% - 750px)/2);
     padding-right: calc((100% - 750px)/2 );
 }
 
 #sedsText
 {
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
     width: 750px;
-    padding-left: calc((100% - 750px)/2 + 15px);
+    padding-left: calc((100% - 750px)/2);
 }
 
-#parent
-{
-    display: inline-block;
-}
 
 .parentImages
 {
@@ -166,9 +162,9 @@ html {
 { 
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
-    padding-left: calc((100% - 750px)/2 + 215px);
+    padding-left: calc((100% - 750px)/2);
     padding-right: calc((100% - 750px)/2 + 507px);
 }
 
@@ -177,8 +173,9 @@ html {
     float: left;
     position: absolute;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
+    padding-top: 155px;
     padding-left: calc((100% - 750px)/2 + 232px);
     padding-right: calc((100% - 750px)/2 + 266px);
 }
@@ -188,8 +185,9 @@ html {
     float: left;
     position: absolute;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
+    padding-top: 155px;    
     padding-left: calc((100% - 750px)/2 + 497px);
     padding-right: calc((100% - 750px)/2 + 25px);
 }
@@ -198,7 +196,7 @@ html {
 {  
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
     padding-top: 50px;
     padding-left: calc((100% - 750px)/2 + 632px);
@@ -209,7 +207,7 @@ html {
 {  
     float: left;
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 16px;
     padding-top: 10px;
     padding-left: calc((100% - 750px)/2 + 632px);
@@ -219,7 +217,7 @@ html {
 .copyright
 {
     text-align:center;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 10px;
     color: #FFFFFF; 
     padding: 25px 0;   
@@ -236,7 +234,7 @@ html {
 .info
 {
     text-align: center;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 14px;
     color: white;
 }
@@ -328,6 +326,6 @@ html {
 .backButton
 {
     color: white;
-    font-family: Avalon;
+    font-family: Sans-serif;
     font-size: 24px;  
 }
