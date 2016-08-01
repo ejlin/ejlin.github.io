@@ -4,46 +4,287 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+      // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+          // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    </link>
+    <link rel="icon" type="img/ico" href="Images/favicon.ico">
+    </link>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+
     <title>
       Home 
     </title>
     
-    <link rel="icon" type="img/ico" href="Images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-
-  <body bgcolor="#6b6b6b">
-    <div class = "topLinks" style = "padding-left: calc((100% - 750px)/2)">
-      <a href="index.html" style="text-decoration: none" class="flink">
-    	Home
-      </a>
-      <a href="About.html" style="text-decoration:none" class="hlink">
-        About
-      </a>
-      <a href="Projects.html" style="text-decoration:none" class="hlink">
-	Projects
-      </a>
-      <a href="Resume.html" style="text-decoration:none" class="hlink">
-	Resume
-      </a>          
-      <a href="Contact.html" style="text-decoration:none" class="hlink">
-   	Contact
-      </a>
-    </div>
     
-    <div id = "geisel">
-      <a href="index.html">
-        <img src="Images/Geisel.gif" height = "45px" width = "75px"/>
+  <a id="HOME_ME">
+  </a>
+
+  <div class = "top">
+  </div>
+  
+  <body bgcolor="#000000">
+  
+    <div class = "fixed">
+      <div class = "topLinks" style = "padding-left: calc((100% - 750px)/2)">
+        <a href="#HOME_ME" style="text-decoration: none" class="flink">
+    	  Home
+        </a>
+        <a href="#ABOUT_ME" style="text-decoration:none" class="hlink">
+          About
+        </a>
+        <a href="#PROJECTS_ME" style="text-decoration:none" class="hlink">
+	  Projects
+        </a>
+        <a href="#RESUME_ME" style="text-decoration:none" class="hlink">
+	  Resume
+        </a>          
+        <a href="#CONTACT_ME" style="text-decoration:none" class="hlink">
+   	  Contact
+        </a>
+      </div>
+    </div>
+ 
+    <div class = "titleBlock">
+      <p class = "divider">
+        Eric J. Lin
+      </p>
+
+      <p class = "underText">
+        Welcome!       
+      </p>
+
+      <a id="ABOUT_ME">
       </a>
+    
+      <br>
+      </br>
+      <br>
+      </br>      
     </div>
 
-    <p class = "divider">
-      Eric J. Lin
-    </p>
+    <div class = "about">
+      <div class = "centerTitle">
+        <b>
+          About
+        </b>
+      </div>
 
-    <p class = "underText">
-      Computer Scientist 
-    </p>
+      <center>
+        <hr width="250px">
+        </hr>
+      </center>
+    
+      <div class = "aboutBlock">
+        <div id = "mainText">
+          <img src="Images/Eric_Selfie.jpg" border=1.5 height = "200px" width = "180px" style="border-color: black ;border-radius:50%">
+          </img>
+        </div>
+
+        <div id = "mainText2">
+          Name: Eric Lin
+        </div>
+        <br>
+        </br>
+        <div id = "mainText2">
+          Age: 19 Year Old
+        </div>
+        <br>
+        </br>
+        <div id = "mainText2">
+          College: UC San Diego '18 / Warren   
+        </div>
+        <br>
+        </br>
+        <div id = "mainText2">
+          Passions: Coding/tackling new projects, Space Exploration, Learning something/anything new, (and of course eating pizza!)
+        </div>
+      </div>
+
+      <p style="clear: both;"/>
+    
+      <a id="PROJECTS_ME"></a>
+    
+      <div class = "aboutPadding">
+      </div>
+    </div>
+
+    <hr>
+    </hr>
+    
+    <div class="projects">
+      <div class = "centerTitle"><b>
+        Projects</b>
+      </div>
+      <center>
+        <hr width="250px">
+        </hr>
+      </center>
+
+      <p style="clear: both;">
+      </p>
+    
+      <div class = "padding">
+        <div class = "scaleProjectImages">
+          <a href="projectsLink.html">
+            <img src="Images/SEDS.jpg" border="2" style="border-color: black; float: left; width: 210px; height: 135px; margin-right: 60px; margin-bottom: 0.5em;">
+            </img>
+          </a>
+        </div>
+        <div class = "scaleProjectImages">    
+          <a href="projectsLink.html">      
+            <img src="Images/CoupleTones.png" border="2" style="border-color: black; float: left; width: 210px; height: 135px; margin-right: 60px; margin-bottom: 0.5em;">
+            </img>
+          </a>
+        </div>
+        <div class = "scaleProjectImages">
+          <a href="projectsLink.html">      
+            <img src="Images/GameBuilder.png" border="2" style="border-color: black; float: left; width: 210px; height: 135px; margin-right: 60px; margin-bottom: 0.5em;">
+            </img>
+          </a>
+        </div>
+      </div>
+
+      <p style="clear: both;">
+      </p>
+
+      <div class = "padding2">
+        <div class = "scaleProjectImages">
+          <a href="projectsLink.html">
+            <img src="Images/PersonalWebsite.png" border="2" style="border-color: black; float: left; width: 210px; height: 135px; margin-right: 60px; margin-bottom: 0.5em;">
+            </img>
+          </a>
+        </div>
+      </div>
+
+      <p style="clear: both;">
+      </p>
+
+      <div class = "aboutPadding2">
+      </div>
+      
+      <a id="RESUME_ME"></a>
+
+      <div class = "padding4">
+      </div>
+    </div>
+
+    <hr>
+    </hr>
+
+    <div class="resume">
+      <div class = "centerTitle"><b>
+        Resume</b>
+      </div>
+      <center>
+        <hr width="250px">
+        </hr>
+      </center>
+
+      <p style="clear: both;">
+      </p>
+      <br>
+      </br>
+      <center>
+        <div class = "centerButton">
+          <div id = "mainTextC">   
+            <a href="Documents/Resume.pdf" download class = "downloadLink" style="text-decoration:none">Download
+            </a>
+          </div>
+        </div>
+      </center>
+      <div class = "padding"></div>
+      </div>
+    </div>
+
+    <hr>
+    </hr>
+
+    <div class="contact">
+      <a id="CONTACT_ME">
+      </a>
+
+      <div class ="centerTitle"><b>
+        Contact</b>
+      </div>
+      <center>
+        <hr width="250px">
+        </hr>
+      </center>
+
+
+    <p style="clear: both;"/>
+    
+    <div class= "padding3">
+    <div class = "align">
+    <form action="https://formspree.io/ejlin@ucsd.edu"
+      method="POST">
+    <label for="fname" class = "formText">Name*</label>   
+      <br />
+    
+      <input type="text" required name="name">
+      <br />
+      
+    <label for="lname" class = "formText">Email*</label>
+      <br />
+    
+      <input type="email" required name="_replyto">
+      <br />
+      
+       <label for="lname" class = "formText">Website</label>
+      <br />
+      
+
+      <input type="text" name="website">
+      <br />
+      
+      <label for="fname" class = "formText">Message*</label>      
+      <br />
+      
+      <textarea class="message" required name="body"></textarea>
+
+      <br />
+      <br />
+      
+      <input type="submit" value="Send">
+    </form>
+    </div>
+
+    </div>
+    <br>
+</div>
+
+<footer>
+
 
     <div class = "logos">
       <div class="scaleImage">
@@ -68,12 +309,12 @@
       ejlin@ucsd.edu | (858) 354-8792
     </div>
 
-  </body>
 
-  <footer>
+  
     <div class="copyright">
-      <p>Copyright &copy; 2015 Eric Lin</p>
+      <p>Copyright &copy; 2016 Eric Lin</p>
     </div>
   </footer>
   
+  </body>
 </html>
