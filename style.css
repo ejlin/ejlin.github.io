@@ -241,6 +241,15 @@ body{
   padding-right: calc((100% - 750px)/2);
 }
 
+.skillsText
+{
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-left: calc(50% - 200px);
+}
+
 .aboutPadding{
   background-color: white;
   padding-bottom: 3%;
