@@ -144,7 +144,7 @@ body{
 
 .padding2
 {
-  padding-top: 3%;
+  padding-top: 5%;
   padding-left: calc((100% - 750px)/2 - 15px);
 }
 
@@ -245,10 +245,30 @@ body{
 {
   color: black;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 30px;
-  padding-left: calc(50% - 200px);
+  padding-left: calc(50% - 300px);
 }
+
+.projectsText
+{
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.projectsText2
+{
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10%;
+}
+
 
 .aboutPadding{
   background-color: white;
