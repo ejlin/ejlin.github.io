@@ -138,14 +138,14 @@ body{
 
 .padding
 {
-  padding-left: calc((100% - 750px)/2 - 15px);
+  padding-left: calc((100% - 750px)/2 - 100px);
   padding-top: 3%;
 }
 
 .padding2
 {
   padding-top: 5%;
-  padding-left: calc((100% - 750px)/2 - 15px);
+  padding-left: calc((100% - 750px)/2 - 100px);
 }
 
 .padding3
@@ -183,25 +183,25 @@ body{
 #mainTextC
 { 
   color: black;
-  padding-top: 5px;
+  padding-top: 3px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 22px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   text-align:center;
 }
 
 .centerButton{
-  background-color: #fdfcf7;
+  background-color: #ffffff;
   width: 175px;
   border:1px solid black;  
-  padding-top: 1%;
-  padding-bottom: 1%;
-  transition: background-color .5s;    
+  padding-top: 14px;
+  padding-bottom: 14px;
+  transition: opacity .5s;    
 }
 
 .centerButton:hover
 {
-  background-color: #faf7f3;
+  opacity: 0.5;
 }
 
 #sedsText
@@ -219,14 +219,12 @@ body{
   display: inline-block;
 }
 
-#mainText
+.aboutPicture
 { 
   float: left;
-  color: black;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
   padding-left: calc((100% - 750px)/2);
-  padding-right: calc((100% - 750px)/2 + 507px);
+
 }
 
 #mainText2
@@ -276,7 +274,7 @@ body{
 }
 
 .aboutPadding2{
-  background-color: #f5f5f9;
+  background-color: #ffffff;
   padding-bottom: 3%;
 }
 
@@ -424,13 +422,13 @@ body{
 }
 
 .projects{
-  background-color: #f5f5f9;
+  background-color: #ffffff;
   padding:0;
   
 }
 
 .resume{
-  background-color: #ffffff;
+  background-color: #f5f5f9;
   padding:0;
   
 }
@@ -485,11 +483,11 @@ input[type=submit] {
   cursor: pointer;
   border:1px solid black;  
   width: 150px;  
-  transition: background-color .5s;  
+  transition: opacity .5s;  
 }
 
 input[type=submit]:hover {
-  background-color: #faf7f3;
+  opacity: 0.5;
 }
 
 .formText
