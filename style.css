@@ -140,12 +140,16 @@ body{
 {
   padding-left: calc((100% - 750px)/2 - 100px);
   padding-top: 3%;
+  padding-bottom: 15px;
+  
 }
 
 .padding2
 {
   padding-top: 5%;
   padding-left: calc((100% - 750px)/2 - 100px);
+  padding-bottom: 15px;
+  
 }
 
 .padding3
