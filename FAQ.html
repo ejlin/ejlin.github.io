@@ -1,0 +1,232 @@
+<!-- Name: Eric Lin
+     Date: September 30th, 2016
+     Description: Website for Renting Objects
+     -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    <link rel="icon" type="img/ico" href="Images/favicon.ico">
+    </link>
+    <title>
+      Renty
+    </title>
+  </head>
+
+  <a href="" style="text-decoration:none">
+    <div class="topHeader" style="padding-left: 15px; padding-top: 15px; padding-bottom: 5px;">
+      <center>
+        EXPLORE. &nbsp;RENT. &nbsp; PROFIT.
+      </center>
+    </div>
+  </a>
+
+  <body>
+    <img src="Images/Renty.png" alt="Renty" class="renty" style="width:250px; height: 120px; margin: auto auto auto 15px;">
+    <form>
+      <input type="text" style="float:left;width:60%; margin: 3.5% auto auto 15px;" placeholder="Search" required>
+      <a href=""><img src="Images/Search.png" alt="Renty" class="buttonPress" style="width:35px; height: 35px; margin: 3.5% 15px auto 15px; border-radius:25px;float:left;">
+      </a>
+    </form>
+
+    <button onclick="document.getElementById('id01').style.display='block'" class="buttonPress" style="width:auto; margin:3.5% auto auto 15px; padding:10px 15px 10px 15px; border-radius:25px">
+      <div class="ArialButton">
+        Login
+      </div>
+    </button>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;
+          </span>
+          <img src="Images/Avatar.png" alt="Avatar" class="avatar">
+          </img>
+        </div>
+
+        <div class="container">
+          <label>
+            <b>
+              Username
+            </b>
+          </label>
+        <input type="text" placeholder="Username" name="uname" required>
+          <br>
+          </br>
+        </input>
+        <label>
+          <b>
+            Password
+          </b>
+        </label>
+        <input type="password" placeholder="Password" name="psw" required>
+        </input>
+        <button type="submit" class="buttonPress">
+          Login
+        </button>
+        <div class="Arial">
+          <input type="checkbox" checked="checked">
+            Keep me signed in
+          </input>
+        </div>
+        <span class="psw">
+          <a href="#">
+            <div class="Arial">
+              <u>
+                Forgot password?
+              </u>
+            </div>
+          </a>
+        </span>
+        <p style="clear: both;">      
+      </div>
+
+      <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>-->
+    </form>
+  </div>
+
+    <!--<button style="width:auto; margin:5px; padding:10px 15px 10px 15px; border-radius:25px" class="buttonPress">-->
+    <button onclick="document.getElementById('id02').style.display='block'" class="buttonPress" style="width:auto; margin:3.5% auto auto 15px; padding:10px 15px 10px 15px; border-radius:25px">    
+      <div class="ArialButton">
+        Sign Up
+      </div>
+    </button>
+
+    <div id="id02" class="signUpModal">
+      <form class="modal-content animate" action="action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;
+          </span>
+          <img src="Images/Avatar.png" alt="Avatar" class="avatar">
+          </img>
+        </div>
+
+        <div class="container">
+          <label>
+            <b>
+              Username
+            </b>
+          </label>
+        <input type="text" placeholder="Username" name="uname" required>
+          <br>
+          </br>
+        </input>
+        <label>
+          <b>
+            Password
+          </b>
+        </label>
+        <input type="password" placeholder="Password" name="psw" required>
+        </input>
+        <br>
+        </br>
+        <label>
+          <b>
+            Re-type password
+          </b>
+        </label>
+        <input type="password" placeholder="Re-type password" name="psw" required>
+        </input>
+        <br>
+        </br>
+        <label>
+          <b>
+            Email
+          </b>
+        </label>
+        <input type="email" placeholder="Email" name="_replyto" required>
+        </input>
+        <br>
+        </br>
+        <label>
+          <b>
+            Date of Birth
+          </b>
+        </label>
+        <input type="date" placeholder="Date of Birth" name="bday" required>
+        </input>
+
+        <button type="submit" class="buttonPress">
+          Sign Up
+        </button>
+        <div class="Arial">
+          <input type="checkbox" checked="checked">
+            Keep me signed in
+          </input>
+        </div>
+        <p style="clear: both;">      
+      </div>
+  
+    </form>
+    </div>
+
+        <p style="clear: both;">      
+  
+    <div class="midHeader">
+      <div class="link">
+          <a href="index.html">
+            <img src="Images/Home.png" alt="icon" class="icon">      
+            </img>
+          </a>
+      </div>
+
+      <div class="link">
+        <a href="" style="text-decoration:none">
+          Browse  
+        </a>
+      </div>
+
+      <div class="link">
+        <a href="" style="text-decoration:none">
+          Post
+        </a>
+      </div>
+
+      
+      <div class="link">
+        <a href="" style="text-decoration:none">
+          Department
+        </a>
+      </div>
+
+      <div class="link">
+        <a href="" style="text-decoration:none">
+          My Account
+        </a>
+      </div>
+      <div class="link">
+        <a href="FAQ.html" style="text-decoration:none">        
+          FAQ
+        </a>
+      </div>
+    </div>  
+
+    <div>
+      Frequently Asked Questions
+    </div>
+
+    <script>
+    // Get the modal
+      var modal = document.getElementById('id01');
+      var signUpModal = document.getElementById('id02');
+      var postModal = document.getElementById('id03');
+
+    // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+        else if (event.target == signUpModal){
+          signUpModal.style.display = "none";
+        }
+        else if (event.target == postModal){
+          postModal.style.display = "none";
+        }
+      }
+
+    </script>
+  </body>
+</html>
+

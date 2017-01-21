@@ -245,7 +245,6 @@ body{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   padding-top: 30px;
-  padding-left: calc(50% - 300px);
 }
 
 .projectsText
@@ -260,6 +259,7 @@ body{
 .projectsText2
 {
   color: black;
+  padding-left: calc((100% - 750px)/2 - 100px);
   font-family: 'Josefin Sans', sans-serif;
   padding-top: 25px;
   font-size: 18px;
