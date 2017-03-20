@@ -1,5 +1,5 @@
 <!--Name: Eric Lin
-  Date: June 22nd, 2015-->
+  Date: March 18th, 2017-->
 
 <!DOCTYPE html>
 <html>
@@ -32,55 +32,51 @@
           }
       });
 
-
       var slideIndex = 1;
-showSlides(slideIndex);
+      showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
     </script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    </link>
-<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
-<link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet"/>
+    <link rel="shortcut icon" href="Images/favicon.ico"/>
 
- <title>
-
+    <title>
       Eric Lin's Website
     </title>
-
   </head>
 
-  <a id="HOME_ME">
-  </a>
+  <div id="HOME_ME"/>
 
-  <div class = "top">
-  </div>
+  <div class = "top"/>
 
   <body>
 
+    <!-- Our navigation bar at the top -->
     <ul id="nav">
       <div style="margin-top: 15px;">
         <li class="li2"><a class="active" href="#HOME_ME">Home</a></li>
@@ -91,37 +87,34 @@ function showSlides(n) {
       </div>
     </ul>
 
+    <img id="background_image" src="Images/background.jpg"/>
 
-      <img id="background_image" src="Images/background.jpg">
-      </img>
-
-      <div id="background_image_buffer">
-        <center>
+    <!-- Our Buffer along with welcome text -->
+    <div id="background_image_buffer">
+      <center>
         <p id="buffer_text">
           Hi. Welcome to my Website.
         </p>
       </center>
-      </div>
+    </div>
 
+    <div class = "clearfix"/>
 
-      <div class = "clearfix"/>
-
-      <div id="ABOUT">
-        <div id="background">
-          <div id="about_text">
-              > Eric Lin
-              <br></br>
-              > Third year undergraduate at UCSD
-              <br></br>
-              > Major: Computer Science | Minor: Business
-              <br></br>
-              > Space Lover
-
-          </div>
-          <img id="about_image" src="Images/Eric_Selfie.jpg">
-          </img>
+    <!-- Our About section of the website -->
+    <div id="ABOUT">
+      <div id="background">
+        <div id="about_text">
+          > Eric Lin
+          <br></br>
+          > Third year undergraduate at UCSD
+          <br></br>
+          > Major: Computer Science | Minor: Business
+          <br></br>
+          > Space Lover
         </div>
-        <div class = "clearfix"/>
+        <img id="about_image" src="Images/Eric_Selfie.jpg"/>
+      </div>
+    <div class = "clearfix"/>
       <!--  <div id="background_experience">
 
         <div class="slideshow-container style="width: 100%">
@@ -157,80 +150,73 @@ function showSlides(n) {
         </div>
 -->
 
-        <div id="background_projects">
-          <center>
-          <img id="project_image" src="Images/Renty.png">
-          </img>
-          <img id="project_image" src="Images/GameBuilder.png">
-          </img>
-          <img id="project_image" src="Images/CoupleTones.png">
-          </img>
-          <img id="project_image" src="Images/PersonalWebsite.png">
-          </img>
-
+    <!-- Our background projects section -->
+    <div id="background_projects">
+      <center>
+        <img id="project_image" src="Images/Renty.png"/>
+        <img id="project_image" src="Images/GameBuilder.png"/>
+        <img id="project_image" src="Images/CoupleTones.png"/>
+        <img id="project_image" src="Images/PersonalWebsite.png"/>
       </center>
+    </div>
 
-        </div>
-
-        <div id="skills_and_contact">
-          <div id="skills">
-            <div id="skills_text_small">
-              <center>
+    <!-- Our skills and contact part of the website -->
+    <div id="skills_and_contact">
+      <div id="skills">
+        <div id="skills_text_small">
+          <center>
             Programming Languages:
-            <br></br> C - C++ - Java - HTML/CSS - ARM Assembly
+            <br></br>
+            C - C++ - Java - HTML/CSS - ARM Assembly
             <br></br>
             Tools:
             <br></br>
             Bash Shell - Git - Vim - Android Studio
           </center>
-          </div>
-
-
-          </div>
-          <div id="bar">
-          </div>
-          <div id="contact">
-            <form action="https://formspree.io/ejlin@ucsd.edu" method="POST">
-              <label for="fname">Name</label>
-                  <input type="text" id="fname" name="firstname">
-                  <br></br>
-                  <label for="lname">Email</label>
-                  <input type="email" id="lname" name="lastname">
-                  <br></br>
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" style="height:150px; max-height: 150px"></textarea>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-
-                  <input id="submit" type="submit" value="Submit"></input>
-              </form>
-          </div>
         </div>
-
-        <div id="footer">
-          <center>
-            <a href="http://www.linkedin.com/in/ejlin18">
-              <img id="footer_images" src="Images/LinkedIn.png">
-              </img>
-            </a>
-            <a href="https://github.com/ejlin">
-              <img id="footer_images" src="Images/Github2.png">
-              </img>
-            </a>
-            <a href="mailto:tgih1999@gmail.com">
-              <img id="footer_images" src="Images/Gmail.png">
-              </img>
-            </a>
-          </center>
+      </div>
+      <div id="bar">
+      </div>
+      <div id="contact">
+        <form action="https://formspree.io/ejlin@ucsd.edu" method="POST">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname"></input>
           <br></br>
-          <center>
-          <div id="footer_text">
-            ejlin1996@gmail.com | 1 (858) 354 - 8792 | &copy; 2017
-          </div>
-        </center>
+          <label for="lname">Email</label>
+          <input type="email" id="lname" name="lastname"></input>
+          <br></br>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" style="height:150px; max-height: 150px"></textarea>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <input id="submit" type="submit" value="Submit"></input>
+        </form>
+      </div>
+    </div>
+
+    <!-- Our website footer including links to follow-->
+    <div id="footer">
+      <center>
+        <a href="http://www.linkedin.com/in/ejlin18">
+          <img id="footer_images" src="Images/LinkedIn.png"/>
+        </a>
+        <a href="https://github.com/ejlin">
+          <img id="footer_images" src="Images/Github2.png"/>
+        </a>
+        <a href="mailto:tgih1999@gmail.com">
+          <img id="footer_images" src="Images/Gmail.png"/>
+        </a>
+      </center>
+      <br></br>
+      <center>
+        <div id="footer_text">
+          ejlin1996@gmail.com | 1 (858) 354 - 8792 | &copy; 2017
         </div>
+      </center>
+    </div>
+
   </body>
 </html>
