@@ -21,7 +21,6 @@ ul
   list-style-type: none;
   margin: 0;
   width: 100%;
-/*  background-color: #f1f1f1;*/
   background-color: transparent;
   height: 55px;
   position: fixed;
@@ -54,17 +53,6 @@ li{
   list-style: none;
   display: inline-block;
 }
-/*
-li a.active{
-  background-color: #00395e;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #8c8c8c;
-  color: white;
-  transition: 0.5s;
-}*/
 
 #nav{
   text-align: justify;
