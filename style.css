@@ -125,15 +125,15 @@ li{
 #background_projects{
   width: 100%;
   background-color: transparent;
-  height: 500px;
+  height: 600px;
   min-width: 90em;
 }
 
 #project_image{
-  margin-top: 125px;
+  margin-top: calc((600px - 275px)/2);
   display: inline-block;
-  height: 250px;
-  width: 300px;
+  height: 275px;
+  width: 20%;
   border: 3px solid #00395e;
   margin-left: 40px;
   margin-right: 40px;
@@ -336,3 +336,207 @@ label{
   to {opacity: 1}
 }
 */
+
+@media screen and (orientation: portrait) and (max-width:1281px){
+  html {
+    overflow-y: scroll;
+  }
+
+  body{
+    padding:0;
+    margin:0;
+  }
+
+  #nav{
+    text-align: justify;
+    width: 100%;
+    min-width: 95em;
+    transition: 0.5s;
+  }
+
+  #nav:after{
+    display: inline-block;
+    width: 100%;
+    min-width: 95em;
+  }
+
+  #background{
+    background-color: white;
+    height: 1400px;
+    width: 100%;
+    min-width: 95em;
+  }
+
+  #background_image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    min-width: 95em;
+  }
+
+  #background_image_buffer{
+    height: 100%;
+    width: 100%;
+    min-width: 95em;
+  }
+
+  #buffer_text{
+    padding-top: 40%;
+    font-family: 'Economica', sans-serif;
+    color: white;
+    text-shadow: -3px 0 #00395e, 0 3px #00395e, 3px 0 #00395e, 0 -3px #00395e;
+    font-size: 148px;
+    margin: 0;
+  }
+
+  #about_text{
+    text-align: center;
+    margin-top: 75px;
+    font-family: 'Economica', sans-serif;
+    color: #00395e;
+    font-size: 72px;
+    z-index: 3;
+  }
+
+  #about_image{
+    height: 350px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #00395e;
+    margin-top: 200px;
+    z-index: 3;
+  }
+
+  #background_experience{
+    width: 95em;
+    background-color: #00395e;
+    height: 400px;
+  }
+
+  #background_projects{
+    width: 95em;
+    background-color: transparent;
+    height: 1200px;
+    min-width: 100em;
+  }
+
+  #project_image{
+    margin-top: calc((600px - 275px)/2);
+    height: 275px;
+    width: 70%;
+    border: 3px solid #00395e;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 25%;
+    max-height: 25%;
+  }
+
+  #skills_and_contact{
+    width: 95em;
+    height: 1400px;
+    min-width: 95em;
+    background-color: #00c2e0;
+  }
+
+  #footer{
+    height: 350px;
+    width: 100%;
+    min-width: 95em;
+    background-color: #f1f1f1;
+  }
+
+  #footer_images{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #footer_text{
+    font-family: 'Economica', sans-serif;
+    font-size: 72px;
+    color: #00395e;
+  }
+
+  #bar{
+    float: left;
+    width: 3px;
+    height: 400px;
+    background-color: white;
+    margin-top: 50px;
+  }
+
+  #contact{
+    float: left;
+    margin-left: 100px;
+    margin-top: 75px;
+  }
+
+  #skills_text_small{
+      font-family: 'Economica', sans-serif;
+      float: left;
+      color: white;
+      font-size: 32px;
+      margin-right: 100px;
+      margin-top: 100px;
+      margin-left: 11%;
+  }
+
+  input[type=text], select {
+    float: right;
+    width: 380px;
+    padding: 5px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    font-family: 'Economica', sans-serif;
+    font-size: 20px;
+    border: 2px solid #00395e;
+    margin-left: 40px;
+  }
+
+  input[type=email], select {
+    float: right;
+    width: 380px;
+    padding: 5px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    font-family: 'Economica', sans-serif;
+    font-size: 20px;
+    border: 2px solid #00395e;
+  }
+
+  input[type=submit] {
+    background-color: white;
+    font-family: 'Economica', sans-serif;
+    font-size: 24px;
+    color: black;
+    padding: 10px 20px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 150px;
+    transition: opacity .5s;
+  }
+
+  label{
+    font-family: 'Economica', sans-serif;
+    color: white;
+    font-size: 32px;
+  }
+
+  #subject{
+    float: right;
+    width: 400px;
+    max-width: 375px;
+    border: 2px solid #00395e;
+    margin-bottom: 25px;
+  }
+
+  #submit{
+    float: right;
+  }
+}
