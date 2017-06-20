@@ -1,5 +1,9 @@
+@media screen and (min-width: 1281px){
+
+
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body{
@@ -14,6 +18,10 @@ body{
 
 .clearfix{
   clear:both;
+}
+
+#clear{
+  visibility: hidden;
 }
 
 ul
@@ -119,17 +127,17 @@ li{
 #background_experience{
   width: 100%;
   background-color: #00395e;
-  height: 400px;
+  height: 500px;
 }
 
 #background_projects{
   width: 100%;
   background-color: transparent;
-  height: 600px;
+  height: 650px;
   min-width: 90em;
 }
 
-#project_image{
+#project_image1, #project_image2, #project_image3, #project_image4{
   margin-top: calc((600px - 275px)/2);
   display: inline-block;
   height: 275px;
@@ -137,7 +145,6 @@ li{
   border: 3px solid #00395e;
   margin-left: 40px;
   margin-right: 40px;
-  max-width: 25%;
   max-height: 25%;
 }
 
@@ -243,128 +250,87 @@ label{
   max-width: 375px;
   border: 2px solid #00395e;
   margin-bottom: 25px;
+  height: 175px;
 }
 
 #submit{
   float: right;
 }
-/*
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
 }
-
-.mySlides {
-    display: none;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}*/
-/* The dots/bullets/indicators */
-/*
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-*/
-/* Fading animation */
-/*
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-*/
 
 @media screen and (orientation: portrait) and (max-width:1281px){
   html {
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   body{
     padding:0;
     margin:0;
+    overflow-x: hidden;
+  }
+
+  #clear{
+    clear:both;
+  }
+
+  ul
+  {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 125px;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    z-index: 2;
+    min-width: 100%;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a{
+    color: white;
+  }
+
+  li a{
+    padding:  0px 25px;
+  }
+
+  .li2
+  {
+    display: inline-block;
+    font-family: 'Economica', sans-serif;
+    font-size: 64px;
+    text-align: center;
+  }
+
+  li{
+    list-style: none;
+    display: inline-block;
   }
 
   #nav{
     text-align: justify;
     width: 100%;
-    min-width: 95em;
+    min-width: 100%;
     transition: 0.5s;
   }
 
   #nav:after{
     display: inline-block;
     width: 100%;
-    min-width: 95em;
+    min-width: 100%;
   }
 
   #background{
     background-color: white;
-    height: 1400px;
+    height: 1600px;
     width: 100%;
-    min-width: 95em;
+    min-width: 100%;
   }
 
   #background_image{
@@ -372,77 +338,85 @@ label{
     height: 100%;
     position: fixed;
     z-index: -1;
-    min-width: 95em;
+    min-width: 100%;
   }
 
   #background_image_buffer{
     height: 100%;
     width: 100%;
-    min-width: 95em;
+    min-width: 100%;
   }
 
   #buffer_text{
-    padding-top: 40%;
+    padding-top: 15%;
     font-family: 'Economica', sans-serif;
     color: white;
     text-shadow: -3px 0 #00395e, 0 3px #00395e, 3px 0 #00395e, 0 -3px #00395e;
     font-size: 148px;
+    margin-top: 100%;
     margin: 0;
   }
 
   #about_text{
     text-align: center;
-    margin-top: 75px;
+    margin-top: 100px;
     font-family: 'Economica', sans-serif;
     color: #00395e;
     font-size: 72px;
     z-index: 3;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 50px;
   }
 
   #about_image{
-    height: 350px;
-    width: 300px;
+    height: 550px;
+    width: 400px;
     border-radius: 50%;
     border: 5px solid #00395e;
-    margin-top: 200px;
+    margin-top: 150px;
+    width: 50%;
+    text-align: center;
     z-index: 3;
+    margin-left: calc((100% - 400px)/2);
+    margin-right: calc((100% - 400px)/2);
   }
 
   #background_experience{
-    width: 95em;
+    width: 100%;
     background-color: #00395e;
     height: 400px;
   }
 
   #background_projects{
-    width: 95em;
+    width: 100%;
     background-color: transparent;
-    height: 1200px;
-    min-width: 100em;
+    height: 2750px;
+    min-width: 100%;
   }
 
-  #project_image{
-    margin-top: calc((600px - 275px)/2);
-    height: 275px;
-    width: 70%;
+  #project_image1, #project_image2, #project_image3, #project_image4{
+    margin-top: 150px;
+    height: 500px;
+    width: 80%;
     border: 3px solid #00395e;
     margin-left: 40px;
     margin-right: 40px;
-    max-width: 25%;
-    max-height: 25%;
+    overflow-x: scroll;
   }
 
   #skills_and_contact{
-    width: 95em;
-    height: 1400px;
-    min-width: 95em;
+    width: 100%;
+    height: 1600px;
+    min-width: 100%;
     background-color: #00c2e0;
   }
 
   #footer{
-    height: 350px;
+    height: 300px;
     width: 100%;
-    min-width: 95em;
+    min-width: 100% ;
     background-color: #f1f1f1;
   }
 
@@ -451,43 +425,46 @@ label{
     height: 100px;
     border-radius: 5px;
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
   }
 
   #footer_text{
     font-family: 'Economica', sans-serif;
-    font-size: 72px;
+    font-size: 52px;
     color: #00395e;
   }
 
   #bar{
     float: left;
-    width: 3px;
-    height: 400px;
+    width: 90%;
+    height: 10px;
     background-color: white;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-left: 5%;
   }
 
   #contact{
     float: left;
-    margin-left: 100px;
-    margin-top: 75px;
+    margin-top: 100px;
+    margin-left: 8%;
   }
 
   #skills_text_small{
       font-family: 'Economica', sans-serif;
-      float: left;
+      text-align: center;
       color: white;
-      font-size: 32px;
+      font-size: 64px;
       margin-right: 100px;
       margin-top: 100px;
       margin-left: 11%;
+      padding-top: 100px;
   }
 
   input[type=text], select {
     float: right;
-    width: 380px;
+    width: 650px;
+    height: 75px;
     padding: 5px 0px;
     margin: 0px 0px;
     box-sizing: border-box;
@@ -499,7 +476,8 @@ label{
 
   input[type=email], select {
     float: right;
-    width: 380px;
+    width: 650px;
+    height: 75px;
     padding: 5px 0px;
     margin: 0px 0px;
     box-sizing: border-box;
@@ -525,18 +503,22 @@ label{
   label{
     font-family: 'Economica', sans-serif;
     color: white;
-    font-size: 32px;
+    font-size: 62px;
   }
 
   #subject{
     float: right;
-    width: 400px;
-    max-width: 375px;
+    width: 642px;
+    height: 300px;
     border: 2px solid #00395e;
     margin-bottom: 25px;
   }
 
   #submit{
-    float: right;
+    margin-left: 25%;
+    font-size: 42px;
+    height: 85px;
+    width: 50%;
+    margin-top: 25px;
   }
 }
