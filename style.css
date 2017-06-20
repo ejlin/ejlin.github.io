@@ -331,6 +331,7 @@ label{
     height: 1600px;
     width: 100%;
     min-width: 100%;
+    overflow-x: auto;
   }
 
   #background_image{
@@ -372,15 +373,12 @@ label{
 
   #about_image{
     height: 550px;
-    width: 400px;
+    width: 475px;
     border-radius: 50%;
     border: 5px solid #00395e;
     margin-top: 150px;
-    width: 50%;
-    text-align: center;
     z-index: 3;
-    margin-left: calc((100% - 400px)/2);
-    margin-right: calc((100% - 400px)/2);
+    margin-left: calc((100% - 475px)/2);
   }
 
   #background_experience{
@@ -469,7 +467,7 @@ label{
     margin: 0px 0px;
     box-sizing: border-box;
     font-family: 'Economica', sans-serif;
-    font-size: 20px;
+    font-size: 42px;
     border: 2px solid #00395e;
     margin-left: 40px;
   }
@@ -482,14 +480,14 @@ label{
     margin: 0px 0px;
     box-sizing: border-box;
     font-family: 'Economica', sans-serif;
-    font-size: 20px;
+    font-size: 42px;
     border: 2px solid #00395e;
   }
 
   input[type=submit] {
     background-color: white;
     font-family: 'Economica', sans-serif;
-    font-size: 24px;
+    font-size: 42px;
     color: black;
     padding: 10px 20px;
     margin: 0px 0;
@@ -512,6 +510,7 @@ label{
     height: 300px;
     border: 2px solid #00395e;
     margin-bottom: 25px;
+    font-size: 42px;
   }
 
   #submit{
