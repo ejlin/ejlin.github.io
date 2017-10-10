@@ -140,8 +140,8 @@ li{
 #project_image1, #project_image2, #project_image3, #project_image4{
   margin-top: calc((600px - 275px)/2);
   display: inline-block;
-  height: 275px;
-  width: 20%;
+  height: 300px;
+  width: 25%;
   border: 3px solid #00395e;
   margin-left: 40px;
   margin-right: 40px;
