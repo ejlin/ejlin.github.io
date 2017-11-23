@@ -26,7 +26,6 @@
     <title>
       Eric Lin's Website
     </title>
-
   </head>
 
   <body>
@@ -35,45 +34,39 @@
     <div id = "menu_bar">
       <li class = "menu_link">
         <a href = "#menu_bar" style = "text-decoration: none; color: white;">
-
-        HOME
-      </a>
+          HOME
+        </a>
       </li>
       <li class = "menu_link">
         <a href = "#about_section" style = "text-decoration: none; color: white;">
-
-        ABOUT
-      </a>
+          ABOUT
+        </a>
       </li>
       <li class = "menu_link">
         <a href = "#projects_section" style = "text-decoration: none; color: white;">
-
-        PROJECTS
-      </a>
+          PROJECTS
+        </a>
       </li>
       <li class = "menu_link">
         <a href = "#skills_section" style = "text-decoration: none; color: white;">
-
-        SKILLS
-      </a>
+          SKILLS
+        </a>
       </li>
       <li class = "menu_link">
         <a href = "#contact_section" style = "text-decoration: none; color: white;">
-        CONTACT
-      </a>
+          CONTACT
+        </a>
       </li>
       <a href = "index.html">
-      <img id = "EL_logo" src = "Images/EL.png">
-      </img>
-    </a>
+        <img id = "EL_logo" src = "Images/EL.png">
+        </img>
+      </a>
     </div>
-
     <div id = "wallpaper_buttons_box">
-
-      <div class = "wallpaper_buttons">
+      <div id = "contact_wallpaper" class = "wallpaper_buttons" onclick = go_to("#contact_section")>
         CONTACT
       </div>
-      <div class = "wallpaper_buttons">
+      <div class = "wallpaper_buttons" onclick = download("resume.pdf")>
         RESUME
       </div>
     </div>
@@ -111,95 +104,95 @@
         PROJECTS
       </p>
       <figure class="imghvr-shutter-in-out-diag-1 projects_left" style="margin-top: 25px;">
-          <p class = "projects_text">
-            FINANCR
-          </p>
-          <figcaption>
-            <p class = "projects_inner_title">
+        <p class = "projects_text">
+          FINANCR
+        </p>
+        <figcaption>
+          <p class = "projects_inner_title">
             Financr
-            </p>
-            <p class = "projects_inner_text">
+          </p>
+          <p class = "projects_inner_text">
             Created a desktop application that allows users to record financial assets and liabilities,
             query current stock prices, calculate future potential earnings, and more in order to
             facilitate better financial management for users. Utilized API's such as Zillow and
             AlphaAvantage to query for property market prices and real time stock prices.
-            </p>
-            <li class = "projects_download" style = "float: left;">
-              Download for Mac
+          </p>
+          <li class = "projects_download" style = "float: left;" onclick = download("Financr")>
+            Download for Mac
+          </li>
+          <li class = "projects_download" style = "float: right;" onclick = download("Financr.exe")>
+            Download for Windows
+          </li>
+        </figcaption>
+      </figure>
+
+      <figure class="imghvr-shutter-in-out-diag-1 projects_right" style="margin-top: 25px;">
+        <p class = "projects_text">
+          APT-ORGANIZER
+        </p>
+        <figcaption>
+          <p class = "projects_inner_title">
+            AptOrganizer
+          </p>
+          <p class = "projects_inner_text">
+            Completely self created a web application that allows users to create rooms
+            to share with apartment-mates in order to log what items to bring along with who is
+            bringing them. Designed and implemented storing to and querying from online database;
+            unique shareable Room ID’s; unique user identifiers
+          </p>
+          <center>
+            <li class = "projects_download" onclick = go_to("https://www.aptorganizer.com");>
+              Visit the Site
             </li>
-            <li class = "projects_download" style = "float: right;">
-              Download for Windows
+          </center>
+        </figcaption>
+      </figure>
+
+      <figure class="imghvr-shutter-in-out-diag-1 projects_left">
+        <p class = "projects_text">
+          TABBY
+        </p>
+        <figcaption>
+          <p class = "projects_inner_title">
+            Tabby
+          </p>
+          <p class = "projects_inner_text">
+            SDHacks 2017 Project: Worked in a team of four to create a service
+            cost splitting website that includes real time SMS messaging to notify users
+            of any impending costs they may have incurred. I was responsible for both back end and
+            front end work for the project as well as serving as overall lead and managing the project from start till
+            finish.
+          </p>
+          <center>
+            <li class = "projects_download" onclick = go_to("https://tabbys.tech");>
+              Visit the Site
             </li>
-          </figcaption>
-        </figure>
+          </center>
+        </figcaption>
+      </figure>
 
-        <figure class="imghvr-shutter-in-out-diag-1 projects_right" style="margin-top: 25px;">
-            <p class = "projects_text">
-              APT-ORGANIZER
-            </p>
-            <figcaption>
-              <p class = "projects_inner_title">
-                AptOrganizer
-              </p>
-              <p class = "projects_inner_text">
-              Completely self created a web application that allows users to create rooms
-              to share with apartment-mates in order to log what items to bring along with who is
-              bringing them. Designed and implemented storing to and querying from online database;
-              unique shareable Room ID’s; unique user identifiers
-              </p>
-              <center>
-              <li class = "projects_download">
-                Visit the Site
-              </li>
-            </center>
-            </figcaption>
-          </figure>
-
-          <figure class="imghvr-shutter-in-out-diag-1 projects_left">
-              <p class = "projects_text">
-                TABBY
-              </p>
-              <figcaption>
-                <p class = "projects_inner_title">
-                 Tabby
-                </p>
-                <p class = "projects_inner_text">
-                SDHacks 2017 Project: Worked in a team of four to create a service
-                cost splitting website that includes real time SMS messaging to notify users
-                of any impending costs they may have incurred. I was responsible for both back end and
-                front end work for the project as well as serving as overall lead and managing the project from start till
-                finish.
-                </p>
-                <center>
-                <li class = "projects_download">
-                  Visit the Site
-                </li>
-              </center>
-              </figcaption>
-            </figure>
-
-            <figure class="imghvr-shutter-in-out-diag-1 projects_right">
-                <p class = "projects_text">
-                  PORTFOLIO
-                </p>
-                <figcaption>
-                  <p class = "projects_inner_title">
-                   Personal Portfolio
-                  </p>
-                  <p class = "projects_inner_text">
-                  That's this! The website you're currently on was built using bare bones, nitty gritty
-                  HTML, CSS, and JavaScript. Sprinkle in a bit of JQuery and the finished product is the
-                  site right here. I've taken knowledge I've learned from past projects and continually
-                  use it to build better and better websites. I suppose you could clink on the link below,
-                  but it'll take you right back to this site.
-                  </p>
-                  <center>
-                  <li class = "projects_download">
-                    Visit the Site
-                  </li>
-                </center>
-                </figcaption>
-              </figure>
+      <figure class="imghvr-shutter-in-out-diag-1 projects_right">
+        <p class = "projects_text">
+          PORTFOLIO
+        </p>
+        <figcaption>
+          <p class = "projects_inner_title">
+            Personal Portfolio
+          </p>
+          <p class = "projects_inner_text">
+            That's this! The website you're currently on was built using bare bones, nitty gritty
+            HTML, CSS, and JavaScript. Sprinkle in a bit of JQuery and the finished product is the
+            site right here. I've taken knowledge I've learned from past projects and continually
+            use it to build better and better websites. I suppose you could clink on the link below,
+            but it'll take you right back to this site.
+          </p>
+          <center>
+            <li class = "projects_download" onclick = go_to("https://ejlin.github.io");>
+              Visit the Site
+            </li>
+          </center>
+        </figcaption>
+      </figure>
     </div>
 
     <div class = "clearfix"/>
@@ -221,87 +214,84 @@
       <li class = "skills_banner_content" style = "margin-left: calc((100% - 980px) / 2)">
         <div class = "skill_bar">
           <div id = "java">
-          Version Control
-        </div>
+            Version Control
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "java">
-          Vim
-        </div>
+            Vim
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "python">
-          BASH
+            BASH
+          </div>
         </div>
-        </div>
-
         <div class = "skill_bar">
           <div id = "python">
-          Jira
+            Jira
+          </div>
         </div>
-        </div>
-
       </li>
       <li class = "skills_banner_content">
         <div class = "skill_bar">
           <div id = "java">
-          Java
-        </div>
+            Java
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "java">
-          HTML/CSS
-        </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-          JavaScript
-        </div>
+            HTML/CSS
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "python">
-          Python
-        </div>
+            JavaScript
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "python">
-          SQL
+            Python
+          </div>
         </div>
+        <div class = "skill_bar">
+          <div id = "python">
+            SQL
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "C">
-          C
-        </div>
+            C
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "Cplus">
-          C++
-        </div>
+            C++
+          </div>
         </div>
       </li>
       <li class = "skills_banner_content">
         <div class = "skill_bar">
           <div id = "java">
-          Test Driven Development
-        </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-          Agile Devlopment
-        </div>
+            Test Driven Development
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "python">
-          Scrum
-        </div>
+            Agile Devlopment
+          </div>
         </div>
         <div class = "skill_bar">
           <div id = "python">
-          O.O.P.
+            Scrum
+          </div>
         </div>
+        <div class = "skill_bar">
+          <div id = "python">
+            O.O.P.
+          </div>
         </div>
       </li>
-
     </div>
 
     <div class = "clearfix"/>
@@ -320,9 +310,8 @@
       </p>
       <p id = "contact_address">
         <a href = "index.html" style = "text-decoration: none; color: black;" class = "hover_div">
-        ejlin.github.io
-      </a>
-
+          ejlin.github.io
+        </a>
         <br></br>
         9155 Judicial Dr. #5210
         <br></br>
@@ -356,40 +345,34 @@
       </form>
     </div>
 
-
     <div class = "clearfix"/>
 
     <div id = "footer">
       <center>
         <li class = "footer_links">
           <a href = "#menu_bar" style = "text-decoration: none; color: white;">
-
-          HOME
-        </a>
+            HOME
+          </a>
         </li>
         <li class = "footer_links">
           <a href = "#about_section" style = "text-decoration: none; color: white;">
-
-          ABOUT
-        </a>
+            ABOUT
+          </a>
         </li>
         <li class = "footer_links">
           <a href = "#projects_section" style = "text-decoration: none; color: white;">
-
-          PROJECTS
-        </a>
+            PROJECTS
+          </a>
         </li>
         <li class = "footer_links">
           <a href = "#skills_section" style = "text-decoration: none; color: white;">
-
-          SKILLS
-        </a>
+            SKILLS
+          </a>
         </li>
         <li class = "footer_links">
           <a href = "#contact_section" style = "text-decoration: none; color: white;">
-
-          CONTACT
-        </a>
+            CONTACT
+          </a>
         </li>
       </center>
       <center>
@@ -415,8 +398,9 @@
       </li>
     </center>
       <p id = "footer_copyright">
-        &copy; 2017 Eric Lin. All rights reserved.
+        &copy; 2017 Eric Lin. All rights reserved. Version 1.0.2
       </p>
     </div>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
