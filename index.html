@@ -1,7 +1,5 @@
-<!--Name: Eric Lin
-  Date: March 18th, 2017-->
-
 <!DOCTYPE html>
+
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
@@ -20,170 +18,405 @@
           }
         });
       });
-      $(window).scroll(function() {
-          if ($(document).scrollTop() > 0) {
-            $("#nav").css("background-color", "#f1f1f1");
-            $("#nav").css("opacity", "0.9");
-            $("a").css("color", "#00395e");
-          } else {
-            $("#nav").css("background-color", "transparent");
-            $("a").css("color", "white");
-          }
-      });
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-      }
     </script>
-
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link rel="stylesheet" href="imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet"/>
-    <link rel="shortcut icon" href="Images/favicon.ico"/>
-
     <title>
       Eric Lin's Website
     </title>
+
   </head>
 
-  <div id="HOME_ME"/>
-
-  <div class = "top"/>
-
   <body>
+    <img id = "wallpaper" src = "Images/wallpaper.png">
+    </img>
+    <div id = "menu_bar">
+      <li class = "menu_link">
+        <a href = "#menu_bar" style = "text-decoration: none; color: white;">
 
-    <!-- Our navigation bar at the top -->
-    <ul id="nav">
-      <div style="margin-top: 15px;">
-        <li class="li2"><a class="active" href="#HOME_ME">Home</a></li>
-        <li class="li2"><a href="#ABOUT">About</a></li>
-        <li class="li2"><a href="#background_projects">Projects</a></li>
-        <li class="li2"><a href="#skills_and_contact">Skills</a></li>
-        <li class="li2"><a href="#skills_and_contact">Contact</a></li>
-        <a href = "Documents/Eric_Lin_Full_Time_Resume.pdf" download>
-          <li class="li2">Resume</li>
-        </a>
+        HOME
+      </a>
+      </li>
+      <li class = "menu_link">
+        <a href = "#about_section" style = "text-decoration: none; color: white;">
+
+        ABOUT
+      </a>
+      </li>
+      <li class = "menu_link">
+        <a href = "#projects_section" style = "text-decoration: none; color: white;">
+
+        PROJECTS
+      </a>
+      </li>
+      <li class = "menu_link">
+        <a href = "#skills_section" style = "text-decoration: none; color: white;">
+
+        SKILLS
+      </a>
+      </li>
+      <li class = "menu_link">
+        <a href = "#contact_section" style = "text-decoration: none; color: white;">
+        CONTACT
+      </a>
+      </li>
+      <a href = "index.html">
+      <img id = "EL_logo" src = "Images/EL.png">
+      </img>
+    </a>
+    </div>
+
+    <div id = "wallpaper_buttons_box">
+
+      <div class = "wallpaper_buttons">
+        CONTACT
       </div>
-    </ul>
-
-    <img id="background_image" src="Images/background.jpg"/>
-
-    <!-- Our Buffer along with welcome text -->
-    <div id="background_image_buffer">
-      <center>
-        <p id="buffer_text">
-          Hi. Welcome to my Website.
-        </p>
-      </center>
+      <div class = "wallpaper_buttons">
+        RESUME
+      </div>
     </div>
 
     <div class = "clearfix"/>
 
-    <!-- Our About section of the website -->
-    <div id="ABOUT">
-      <div id="background">
-        <div id="about_text">
-          &bull; Eric Lin
-          <br></br>
-          &bull; Fourth year undergraduate at UCSD
-          <br></br>
-          &bull; Major: Computer Science ~ Minor: Business ~ 2018
-          <br></br>
-          &bull; Space Lover
-        </div>
-        <img id="about_image" src="Images/Eric_Selfie.jpg"/>
-      </div>
+    <div id = "about_section">
+      <p id = "about_title">
+        ABOUT ME
+      </p>
+      <img id = "profile_image" src = "Images/profile.png">
+      </img>
+      <p id = "about_text">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That's me! To your left, wearing the black
+        hoodie with my thumbs sticking out of my pockets funny. You can't unsee
+        my thumbs anymore, can you? They stick out like a... sore thumb. Aha.
+        Let me formally welcome you to my website and tell you a little bit about myself.
+        <br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm currently a fourth year undergraduate
+        pursuing my Bachelor's of Science at the University of California,
+        San Diego (UCSD) (No, not University of San Diego, that's USD). I'll be
+        graduating in June of 2018 and intend to enter the workforce right after.
+        I'm passionate about drafting, creating, and developing projects and
+        bringing to life something really cool. I love working in teams and really
+        enjoy the creative process that comes with sharing ideas between similar minds.
+        Oh, and I'm also passionate about pizza. Never forget pizza. Keep scrolling
+        to check out projects I've worked on and notable skills.
+      </p>
+    </div>
+
     <div class = "clearfix"/>
 
-    <!-- Our background projects section -->
-    <div id="background_projects">
-      <center>
-        <a href = "https://www.aptorganizer.com">
-          <img id="project_image1" src="Images/AptOrganizer.png"/>
-        </a>
-        <img id="project_image2" src="Images/GameBuilder.png"/>
-        <a href = "Documents/Financr_mac" download>
-          <img id="project_image3" src="Images/Financr.png"/>
-        </a>
-      </center>
+    <div id = "projects_section">
+      <p id = "projects_title">
+        PROJECTS
+      </p>
+      <figure class="imghvr-shutter-in-out-diag-1 projects_left" style="margin-top: 25px;">
+          <p class = "projects_text">
+            FINANCR
+          </p>
+          <figcaption>
+            <p class = "projects_inner_title">
+            Financr
+            </p>
+            <p class = "projects_inner_text">
+            Created a desktop application that allows users to record financial assets and liabilities,
+            query current stock prices, calculate future potential earnings, and more in order to
+            facilitate better financial management for users. Utilized API's such as Zillow and
+            AlphaAvantage to query for property market prices and real time stock prices.
+            </p>
+            <li class = "projects_download" style = "float: left;">
+              Download for Mac
+            </li>
+            <li class = "projects_download" style = "float: right;">
+              Download for Windows
+            </li>
+          </figcaption>
+        </figure>
+
+        <figure class="imghvr-shutter-in-out-diag-1 projects_right" style="margin-top: 25px;">
+            <p class = "projects_text">
+              APT-ORGANIZER
+            </p>
+            <figcaption>
+              <p class = "projects_inner_title">
+                AptOrganizer
+              </p>
+              <p class = "projects_inner_text">
+              Completely self created a web application that allows users to create rooms
+              to share with apartment-mates in order to log what items to bring along with who is
+              bringing them. Designed and implemented storing to and querying from online database;
+              unique shareable Room ID’s; unique user identifiers
+              </p>
+              <center>
+              <li class = "projects_download">
+                Visit the Site
+              </li>
+            </center>
+            </figcaption>
+          </figure>
+
+          <figure class="imghvr-shutter-in-out-diag-1 projects_left">
+              <p class = "projects_text">
+                TABBY
+              </p>
+              <figcaption>
+                <p class = "projects_inner_title">
+                 Tabby
+                </p>
+                <p class = "projects_inner_text">
+                SDHacks 2017 Project: Worked in a team of four to create a service
+                cost splitting website that includes real time SMS messaging to notify modal_users
+                of any impending costs they may have incurred. I was responsible for both back end and
+                front end work for the project as well as serving as overall lead and managing the project from start till
+                finish.
+                </p>
+                <center>
+                <li class = "projects_download">
+                  Visit the Site
+                </li>
+              </center>
+              </figcaption>
+            </figure>
+
+            <figure class="imghvr-shutter-in-out-diag-1 projects_right">
+                <p class = "projects_text">
+                  PORTFOLIO
+                </p>
+                <figcaption>
+                  <p class = "projects_inner_title">
+                   Personal Portfolio
+                  </p>
+                  <p class = "projects_inner_text">
+                  That's this! The website you're currently on was built using bare bones, nitty gritty
+                  HTML, CSS, and JavaScript. Sprinkle in a bit of JQuery and the finished product is the
+                  site right here. I've taken knowledge I've learned from past projects and continually
+                  use it to build better and better websites. I suppose you could clink on the link below,
+                  but it'll take you right back to this site.
+                  </p>
+                  <center>
+                  <li class = "projects_download">
+                    Visit the Site
+                  </li>
+                </center>
+                </figcaption>
+              </figure>
     </div>
 
-    <!-- Our skills and contact part of the website -->
+    <div class = "clearfix"/>
 
-    <div id="skills_and_contact">
-      <div id="skills_text_small">
-        <center>
-          Programming Languages:
-          <br></br>
-          HTML/CSS - JavaScript - C - C++ - Python - Java
-          <br></br>
-          Tools & Miscellaneous:
-          <br></br>
-          BASH - Version Contrl - Agile Development - Scrum - TDD - OOP - Jira - Version Control - Vim
-        </center>
-      </div>
+    <div id = "skills_section">
+      <p id = "skills_title">
+        SKILLS
+      </p>
+      <li class = "skills_banner hover_div" style = "margin-left: calc((100% - 980px) / 2)">
+        Tools
+      </li>
+      <li class = "skills_banner hover_div">
+        Languages
+      </li>
+      <li class = "skills_banner hover_div">
+        Miscellaneous
+      </li>
 
-      <div id="bar">
-      </div>
-
-      <div id="contact">
-        <form action="https://formspree.io/ejlin@ucsd.edu" method="POST">
-          <label for="fname">Name</label>
-          <input type="text" id="fname" name="firstname"></input>
-          <br></br>
-          <label for="lname">Email</label>
-          <input type="email" id="lname" name="lastname"></input>
-          <br></br>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject"></textarea>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <input id="submit" type="submit" value="Submit"></input>
-        </form>
-      </div>
-    </div>
-
-    <!-- Our website footer including links to follow-->
-    <div id="footer">
-      <center>
-        <a href="http://www.linkedin.com/in/ejlin18">
-          <img id="footer_images" src="Images/LinkedIn.png"/>
-        </a>
-        <a href="https://github.com/ejlin">
-          <img id="footer_images" src="Images/Github2.png"/>
-        </a>
-        <a href="mailto:tgih1999@gmail.com">
-          <img id="footer_images" src="Images/Gmail.png"/>
-        </a>
-      </center>
-      <br></br>
-      <center>
-        <div id="footer_text">
-          ejlin1996@gmail.com ~ 1 (858) 354 - 8792 ~ &copy; 2017
+      <li class = "skills_banner_content" style = "margin-left: calc((100% - 980px) / 2)">
+        <div class = "skill_bar">
+          <div id = "java">
+          Version Control
         </div>
-      </center>
+        </div>
+        <div class = "skill_bar">
+          <div id = "java">
+          Vim
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "python">
+          BASH
+        </div>
+        </div>
+
+        <div class = "skill_bar">
+          <div id = "python">
+          Jira
+        </div>
+        </div>
+
+      </li>
+      <li class = "skills_banner_content">
+        <div class = "skill_bar">
+          <div id = "java">
+          Java
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "java">
+          HTML/CSS
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "python">
+          JavaScript
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "python">
+          Python
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "python">
+          SQL
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "C">
+          C
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "Cplus">
+          C++
+        </div>
+        </div>
+      </li>
+      <li class = "skills_banner_content">
+        <div class = "skill_bar">
+          <div id = "java">
+          Test Driven Development
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "python">
+          Agile Devlopment
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "python">
+          Scrum
+        </div>
+        </div>
+        <div class = "skill_bar">
+          <div id = "python">
+          O.O.P.
+        </div>
+        </div>
+      </li>
+
     </div>
 
+    <div class = "clearfix"/>
+
+    <div id = "contact_section">
+      <p id = "contact_title">
+        CONTACT ME
+      </p>
+      <p id = "contact_text" style = "text-align: justify;">
+        Feel free to contact me with any questions, comments, concerns, or business inquiries.
+        Or send me your favorite joke and I'll send you one back. Who can't use a good laugh once in a while?
+      </p>
+
+      <p id = "contact_address_title">
+        <b>CONTACT INFORMATION:</b>
+      </p>
+      <p id = "contact_address">
+        <a href = "index.html" style = "text-decoration: none; color: black;" class = "hover_div">
+        ejlin.github.io
+      </a>
+
+        <br></br>
+        9155 Judicial Dr. #5210
+        <br></br>
+        La Jolla, CA 92122
+        <br></br>
+        <a href style = "color: black; text-decoration: none;" class = "hover_div">
+          1 (858) 354 - 8792
+        </a>
+        <br></br>
+        <a href = "mailto:tgih1999@gmail.com" style="color: black; text-decoration: none;" class = "hover_div">
+          ejlin1996@gmail.com
+        <a>
+      </p>
+    </div>
+
+    <div id = "contact_input">
+      <form action="https://formspree.io/ejlin@ucsd.edu" method="POST">
+        <input type="text" id="fname" name="firstname" maxlength = "40" class="name_input" required></input>
+        <input type="text" id="lname" name="lastname" maxlength = "40" class="name_input" style = "margin-left: 4.75%;" required></input>
+        <label for="fname" class="name_input_text">First Name *</label>
+        <label for="lname" class="name_input_text" style="margin-left: 37%;">Last Name *</label>
+        <br></br>
+        <input type="email" id="email" name="email" maxlength = "60" class="email_input" required></input>
+        <label for="fname" class="name_input_text">Email *</label>
+        <br></br>
+        <br></br>
+        <textarea id="message_input" name="subject" required></textarea>
+        <label for="subject">Subject *</label>
+        <br></br>
+        <input id="contact_submit" type="submit" value="SEND"></input>
+      </form>
+    </div>
+
+
+    <div class = "clearfix"/>
+
+    <div id = "footer">
+      <center>
+        <li class = "footer_links">
+          <a href = "#menu_bar" style = "text-decoration: none; color: white;">
+
+          HOME
+        </a>
+        </li>
+        <li class = "footer_links">
+          <a href = "#about_section" style = "text-decoration: none; color: white;">
+
+          ABOUT
+        </a>
+        </li>
+        <li class = "footer_links">
+          <a href = "#projects_section" style = "text-decoration: none; color: white;">
+
+          PROJECTS
+        </a>
+        </li>
+        <li class = "footer_links">
+          <a href = "#skills_section" style = "text-decoration: none; color: white;">
+
+          SKILLS
+        </a>
+        </li>
+        <li class = "footer_links">
+          <a href = "#contact_section" style = "text-decoration: none; color: white;">
+
+          CONTACT
+        </a>
+        </li>
+      </center>
+      <center>
+      <li class = "footer_img_list">
+        <a href = "http://www.facebook.com/tgih1999" target="_blank">
+          <img class = "footer_imgs" src = "Images/facebook.png"></img>
+        </a>
+      </li>
+      <li class = "footer_img_list">
+        <a href = "http://linkedin.com/in/ejlin18" target="_blank">
+          <img class = "footer_imgs" src = "Images/linkedin.png"></img>
+        </a>
+      </li>
+      <li class = "footer_img_list">
+        <a href = "http://github.com/ejlin" target="_blank">
+          <img class = "footer_imgs" src = "Images/github.png"></img>
+        </a>
+      </li>
+      <li class = "footer_img_list">
+        <a href = "mailto:tgih1999@gmail.com">
+          <img class = "footer_imgs" src = "Images/email.png"></img>
+        </a>
+      </li>
+    </center>
+      <p id = "footer_copyright">
+        &copy; 2017 Eric Lin. All rights reserved.
+      </p>
+    </div>
   </body>
 </html>
