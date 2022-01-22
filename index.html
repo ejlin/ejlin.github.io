@@ -4,7 +4,7 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script>
-    <script>
+    <!-- <script>
       $(document).ready(function(){
         $("a").on('click', function(event) {
           if (this.hash !== "") {
@@ -18,9 +18,10 @@
           }
         });
       });
-    </script>
+    </script> -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>
@@ -29,375 +30,186 @@
   </head>
 
   <body>
-    <img id = "wallpaper" src = "Images/wallpaper.png">
-    </img>
-    <div id = "menu_bar">
-      <li class = "menu_link">
-        <a href = "#menu_bar" style = "text-decoration: none; color: white;">
-          HOME
-        </a>
-      </li>
-      <li class = "menu_link">
-        <a href = "#about_section" style = "text-decoration: none; color: white;">
-          ABOUT
-        </a>
-      </li>
-      <li class = "menu_link">
-        <a href = "#projects_section" style = "text-decoration: none; color: white;">
-          PROJECTS
-        </a>
-      </li>
-      <li class = "menu_link">
-        <a href = "#skills_section" style = "text-decoration: none; color: white;">
-          SKILLS
-        </a>
-      </li>
-      <li class = "menu_link">
-        <a href = "#contact_section" style = "text-decoration: none; color: white;">
-          CONTACT
-        </a>
-      </li>
-      <a href = "index.html">
-        <img id = "EL_logo" src = "Images/EL.png">
-        </img>
-      </a>
-    </div>
-    <div id = "wallpaper_buttons_box">
-      <div id = "contact_wallpaper" class = "wallpaper_buttons" onclick = go_to("#contact_section")>
-        CONTACT
+    <div id="body-inner-box">
+      <div id="body-inner-box-title-box">
+        <h1>
+          Hello. My name is Eric.
+        </h1>
+        <h2>
+          Welcome to my Personal Website.
+        </h2>
       </div>
-      <div class = "wallpaper_buttons" onclick = download("resume.pdf")>
-        RESUME
+      <div id="body-inner-box-body-box">
+        <div id="body-inner-box-folder-tabs">
+          <ul>
+            <li id="about-me-tab" class="tabs" onclick="displaySlide('About Me')">
+              About Me
+            </li>
+            <li id="work-experience-tab" class="tabs" onclick="displaySlide('Work Experience')">
+              Work Experience
+            </li>
+            <li id="projects-tab" class="tabs" onclick="displaySlide('Projects')">
+              Projects
+            </li>
+            <li id="resume-tab" class="tabs" onclick="displaySlide('Resume')">
+              Resume
+            </li>
+          </ul>
+        </div>
+        <div id="body-inner-box-folder-body">
+          <div id="about-me-slide" class="slide">
+            <div id="about-me-slide-left-box">
+              <img id="profile-pic" src="./Images/profile.png">
+              </img>
+              <div id="about-me-slide-left-box-title-box">
+                <p class="profile-title">
+                  Eric Lin
+                </p>
+                <div class="break">
+                </div>
+                <p class="profile-subtitle">
+                  Software Engineer
+                </p>
+                <p class="profile-subtitle">
+                  @Amazon
+                </p>
+                <div class="break">
+                </div>
+                <p class="profile-subtitle">
+                  Computer Science B.S. 2018
+                </p>
+                <p class="profile-subtitle">
+                  Business Minor
+                </p>
+                <p class="profile-subtitle">
+                  UC San Diego
+                </p>
+              </div>
+            </div>
+            <div id="about-me-slide-right-box">
+              <p class="body-text">
+                &nbsp;&nbsp;I'm a Software Engineer with a specialization in Infrastructure. I've been working at Cruise for the past 3 years on a job scheduling system, responsible for running millions of simulations every day. Helping to build the tools that make the car go. I'm currently at Amazon, NY working on payments distribution.
+                <br></br>
+                In my free time, I like to exercise, travel, hang with friends, and learn new tech. I love working in team environments and am passionate about bringing projects to fruition. I'm also a big Real Estate person, so would definitely love to chat about that as well.
+                <br></br>
+                Shoot me an email if you'd like to connect/chat.
+              </p>
+            </div>
+          </div>
+          <div id="work-experience-slide" class="slide">
+            <div class="work-experience-slide-bar">
+              <div class="work-experience-slide-bar-left-box">
+                <img class="work-experience-icon" src="./Icons/amazon.png">
+                </img>
+              </div>
+              <div class="work-experience-slide-bar-right-box">
+                <p class="work-experience-title">
+                  Software Engineer
+                </p>
+                <p class="work-experience-subtitle">
+                  01.31.2022 - Present
+                </p>
+                <div class="break">
+                </div>
+                <p class="work-experience-text">
+                  &bull; Incoming Software Engineer working on Amazon's Payments Distribution platform.
+                </p>
+              </div>
+            </div>
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+            <div class="work-experience-slide-bar">
+              <div class="work-experience-slide-bar-left-box">
+                <img class="work-experience-icon" src="./Icons/cruise.png">
+                </img>
+              </div>
+              <div class="work-experience-slide-bar-right-box">
+                <p class="work-experience-title">
+                  Senior Software Engineer
+                </p>
+                <p class="work-experience-subtitle">
+                  01.01.2022 - 01.28.2022
+                </p>
+                <div class="break">
+                </div>
+                <p class="work-experience-text">
+                  &bull; Led and designed custom Quotas system, letting users avoid resource contention amongst entire company, speeding up critical jobs turnaround time and improving customer overall satisfaction
+                </p>
+                <div class="break">
+                </div>
+                <p class="work-experience-title">
+                  Software Engineer
+                </p>
+                <p class="work-experience-subtitle">
+                  12.10.2018 - 12.31.2021
+                </p>
+                <div class="break">
+                </div>
+                <p class="work-experience-text">
+                  &bull; Tiered workers: intelligently spin up vm instances based on estimated need from historical results, resulting in savings of 30k/mo
+                </p>
+                <div class="break">
+                </div>
+                <p class="work-experience-text">
+                  &bull; Designed/created custom estimation service for estimating simulation runtimes; estimates were accurate within +/- 18% across millions of tasks and allowed for completion goal based scheduling
+                </p>
+                <div class="break">
+                </div>
+                <p class="work-experience-text">
+                  &bull; Responsible for transfer/cleanup of over 30Pb of data resulting in over 100k/mo. savings and additional cleanup of 1Pb of data per day resulting in over 15k/mo. savings
+                </p>
+                <div class="break">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="projects-slide" class="slide">
+
+          </div>
+          <div id="resume-slide" class="slide">
+            <object id="resume-iframe" data="./Documents/resume.pdf" type="application/pdf">
+              <iframe src="./Documents/resume.pdf"></iframe>
+            </object>
+            <!-- <iframe id="resume-iframe" src="./Documents/resume.pdf">
+            </iframe> -->
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class = "clearfix"/>
-
-    <div id = "about_section">
-      <p id = "about_title">
-        ABOUT ME
-      </p>
-      <img id = "profile_image" src = "Images/profile.png">
-      </img>
-      <p id = "about_text">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That's me! To your left, wearing the black
-        hoodie with my thumbs sticking out of my pockets funny. You can't unsee
-        my thumbs anymore, can you? They stick out like a... sore thumb. Aha.
-        Let me formally welcome you to my website and tell you a little bit about myself.
-        <br></br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm recently graduated from the University of California,
-        San Diego (UCSD) (No, not University of San Diego, that's USD) with a Bachelor's of Science in Computer Science and a minor in business.
-        I'm passionate about drafting, creating, and developing projects and
-        bringing to life something really cool. I love working in teams and really
-        enjoy the creative process that comes with sharing ideas between similar minds.
-        Oh, and I'm also passionate about pizza. Never forget pizza. Keep scrolling
-        to check out projects I've worked on and notable skills.
-      </p>
-    </div>
-
-    <div class = "clearfix"/>
-
-    <div id = "projects_section">
-      <p id = "projects_title">
-        PROJECTS
-      </p>
-      <figure class="imghvr-shutter-in-out-diag-1 projects_left" style="margin-top: 25px;">
-        <p class = "projects_text">
-          FINANCR
+      <div id="body-icons-box">
+        <div>
+          <a href="https://github.com/ejlin" target="_blank">
+            <img class="icons" src="./Icons/github.svg">
+            </img>
+          </a>
+          <a href="https://linkedin.com/in/ejlin18" target="_blank">
+            <img class="icons" src="./Icons/linkedin.svg">
+            </img>
+          </a>
+          <a href="mailto:ejlin1996@gmail.com">
+            <img class="icons" src="./Icons/gmail.svg">
+            </img>
+          </a>
+          <a href="https://www.youtube.com/channel/UCVlAp_P4q4yausPUeXrK_Xw" target="_blank">
+            <img class="icons" src="./Icons/youtube.svg">
+            </img>
+          </a>
+          <a href="https://facebook.com/tgih1999" target="_blank">
+            <img class="icons" src="./Icons/meta.svg">
+            </img>
+          </a>
+        </div>
+        <div class="break">
+        </div>
+        <p id="copyright">
+          &copy; Eric Lin 2022
         </p>
-        <figcaption>
-          <p class = "projects_inner_title">
-            Financr
-          </p>
-          <p class = "projects_inner_text">
-            Created a desktop application that allows users to record financial assets and liabilities,
-            query current stock prices, calculate future potential earnings, and more in order to
-            facilitate better financial management for users. Utilized API's such as Zillow and
-            AlphaAvantage to query for property market prices and real time stock prices.
-          </p>
-          <li class = "projects_download" style = "float: left;" onclick = download("Financr.zip")>
-            Download for Mac
-          </li>
-          <li class = "projects_download" style = "float: right;" onclick = download("Financr.exe")>
-            Download for Windows
-          </li>
-        </figcaption>
-      </figure>
-
-      <figure class="imghvr-shutter-in-out-diag-1 projects_right" style="margin-top: 25px;">
-        <p class = "projects_text">
-          APT-ORGANIZER
-        </p>
-        <figcaption>
-          <p class = "projects_inner_title">
-            AptOrganizer
-          </p>
-          <p class = "projects_inner_text">
-            Completely self created a web application that allows users to create rooms
-            to share with apartment-mates in order to log what items to bring along with who is
-            bringing them. Designed and implemented storing to and querying from online database;
-            unique shareable Room ID’s; unique user identifiers
-          </p>
-          <center>
-            <li class = "projects_download" onclick = go_to("https://www.aptorganizer.com");>
-              Visit the Site
-            </li>
-          </center>
-        </figcaption>
-      </figure>
-
-      <figure class="imghvr-shutter-in-out-diag-1 projects_left">
-        <p class = "projects_text">
-          TABBY
-        </p>
-        <figcaption>
-          <p class = "projects_inner_title">
-            Tabby
-          </p>
-          <p class = "projects_inner_text">
-            SDHacks 2017 Project: Worked in a team of four to create a service
-            cost splitting website that includes real time SMS messaging to notify users
-            of any impending costs they may have incurred. I was responsible for both back end and
-            front end work for the project as well as serving as overall lead and managing the project from start till
-            finish.
-          </p>
-          <center>
-            <li class = "projects_download" onclick = go_to("https://tabbys.tech");>
-              Visit the Site
-            </li>
-          </center>
-        </figcaption>
-      </figure>
-
-      <figure class="imghvr-shutter-in-out-diag-1 projects_right">
-        <p class = "projects_text">
-          PORTFOLIO
-        </p>
-        <figcaption>
-          <p class = "projects_inner_title">
-            Personal Portfolio
-          </p>
-          <p class = "projects_inner_text">
-            That's this! The website you're currently on was built using bare bones, nitty gritty
-            HTML, CSS, and JavaScript. Sprinkle in a bit of JQuery and the finished product is the
-            site right here. I've taken knowledge I've learned from past projects and continually
-            use it to build better and better websites. I suppose you could clink on the link below,
-            but it'll take you right back to this site.
-          </p>
-          <center>
-            <li class = "projects_download" onclick = go_to("https://ejlin.github.io");>
-              Visit the Site
-            </li>
-          </center>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class = "clearfix"/>
-
-    <div id = "skills_section">
-      <p id = "skills_title">
-        SKILLS
-      </p>
-      <li class = "skills_banner hover_div" style = "margin-left: calc((100% - 980px) / 2)">
-        Tools
-      </li>
-      <li class = "skills_banner hover_div">
-        Languages
-      </li>
-      <li class = "skills_banner hover_div">
-        Miscellaneous
-      </li>
-
-      <li class = "skills_banner_content" style = "margin-left: calc((100% - 980px) / 2)">
-        <div class = "skill_bar">
-          <div id = "java">
-            Version Control
-          </div>
+        <div class="break">
         </div>
-        <div class = "skill_bar">
-          <div id = "java">
-            Vim
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            BASH
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            Jira
-          </div>
-        </div>
-      </li>
-      <li class = "skills_banner_content">
-        <div class = "skill_bar">
-          <div id = "java">
-            Java
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "java">
-            HTML/CSS
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            JavaScript
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            Python
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            SQL
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "C">
-            C
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "Cplus">
-            C++
-          </div>
-        </div>
-      </li>
-      <li class = "skills_banner_content">
-        <div class = "skill_bar">
-          <div id = "java">
-            Test Driven Development
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            Agile Devlopment
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            Scrum
-          </div>
-        </div>
-        <div class = "skill_bar">
-          <div id = "python">
-            O.O.P.
-          </div>
-        </div>
-      </li>
-    </div>
-
-    <div class = "clearfix"/>
-
-    <div id = "contact_section">
-      <p id = "contact_title">
-        CONTACT ME
-      </p>
-      <p id = "contact_text" style = "text-align: justify;">
-        Feel free to contact me with any questions, comments, concerns, or business inquiries.
-        Or send me your favorite joke and I'll send you one back. Who can't use a good laugh once in a while?
-      </p>
-
-      <p id = "contact_address_title">
-        <b>CONTACT INFORMATION:</b>
-      </p>
-      <p id = "contact_address">
-        <a href = "index.html" style = "text-decoration: none; color: black;" class = "hover_div">
-          ejlin.github.io
-        </a>
-        <br></br>
-        201 Folsom St.
-        <br></br>
-        San Francisco, CA 94105
-        <br></br>
-        <a href style = "color: black; text-decoration: none;" class = "hover_div">
-          1 (858) 354 - 8792
-        </a>
-        <br></br>
-        <a href = "mailto:tgih1999@gmail.com" style="color: black; text-decoration: none;" class = "hover_div">
-          ejlin1996@gmail.com
-        <a>
-      </p>
-    </div>
-
-    <div id = "contact_input">
-      <form action="https://formspree.io/ejlin@ucsd.edu" method="POST">
-        <input type="text" id="fname" name="firstname" maxlength = "40" class="name_input" required></input>
-        <input type="text" id="lname" name="lastname" maxlength = "40" class="name_input" style = "margin-left: 4.5%;" required></input>
-        <label for="fname" class="name_input_text">First Name *</label>
-        <label for="lname" class="name_input_text" style="margin-left: 37%;">Last Name *</label>
-        <br></br>
-        <input type="email" id="email" name="email" maxlength = "60" class="email_input" required></input>
-        <label for="fname" class="name_input_text">Email *</label>
-        <br></br>
-        <br></br>
-        <textarea id="message_input" name="subject" required></textarea>
-        <label for="subject">Subject *</label>
-        <br></br>
-        <input id="contact_submit" type="submit" value="SEND"></input>
-      </form>
-    </div>
-
-    <div class = "clearfix"/>
-
-    <div id = "footer">
-      <center>
-        <li class = "footer_links">
-          <a href = "#menu_bar" style = "text-decoration: none; color: white;">
-            HOME
-          </a>
-        </li>
-        <li class = "footer_links">
-          <a href = "#about_section" style = "text-decoration: none; color: white;">
-            ABOUT
-          </a>
-        </li>
-        <li class = "footer_links">
-          <a href = "#projects_section" style = "text-decoration: none; color: white;">
-            PROJECTS
-          </a>
-        </li>
-        <li class = "footer_links">
-          <a href = "#skills_section" style = "text-decoration: none; color: white;">
-            SKILLS
-          </a>
-        </li>
-        <li class = "footer_links">
-          <a href = "#contact_section" style = "text-decoration: none; color: white;">
-            CONTACT
-          </a>
-        </li>
-      </center>
-      <center>
-      <li class = "footer_img_list">
-        <a href = "http://www.facebook.com/tgih1999" target="_blank">
-          <img class = "footer_imgs" src = "Images/facebook.png"></img>
-        </a>
-      </li>
-      <li class = "footer_img_list">
-        <a href = "http://linkedin.com/in/ejlin18" target="_blank">
-          <img class = "footer_imgs" src = "Images/LinkedIn.png"></img>
-        </a>
-      </li>
-      <li class = "footer_img_list">
-        <a href = "http://github.com/ejlin" target="_blank">
-          <img class = "footer_imgs" src = "Images/github.png"></img>
-        </a>
-      </li>
-      <li class = "footer_img_list">
-        <a href = "mailto:tgih1999@gmail.com">
-          <img class = "footer_imgs" src = "Images/email.png"></img>
-        </a>
-      </li>
-    </center>
-      <p id = "footer_copyright">
-        &copy; 2017 Eric Lin. All rights reserved. Version 1.0.2
-      </p>
+      </div>
     </div>
     <script type="text/javascript" src="index.js"></script>
   </body>
